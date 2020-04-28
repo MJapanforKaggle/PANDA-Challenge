@@ -1,2 +1,5 @@
 # PANDA-Challenge
-テスト
+コンペのPATH
+'''
+/kaggle/input/prostate-cancer-grade-assessment
+'''

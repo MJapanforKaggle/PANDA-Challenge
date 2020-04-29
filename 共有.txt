@@ -1,2 +1,4 @@
 ・GLEASON_scoreは[0+0]〜[5+5]の36種類ある
 ・GLEASON_scoreとISUP_gradeは対応している(?)のでGLEASON_scoreを出せば良い。
+・GLEASON_scoreの説明PDF(2pを参照)
+　https://www.archivesofpathology.org/doi/pdf/10.5858/arpa.2018-0334-RA

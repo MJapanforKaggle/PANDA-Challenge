@@ -1,0 +1,2 @@
+・GLEASON_scoreは[0+0]〜[5+5]の36種類ある
+・GLEASON_scoreとISUP_gradeは対応している(?)のでGLEASON_scoreを出せば良い。

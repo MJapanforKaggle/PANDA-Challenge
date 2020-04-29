@@ -1,2 +1,8 @@
 4/29(水曜日)
-・
+・評価指標(gleason_score, isup_grade)に関する基本事項の共有
+・https://www.kaggle.com/yasufuminakama/panda-se-resnext50-classification-baselineを参考にmodelを考える
+ ・SEModule 
+ ・Bottleneck
+ ・ResNext 　　に関して次回コード読み
+・入力画像サイズが固定でないのでw*hにリサイズする方針
+　->ある程度モデルが完成してきたら特定箇所の抽出などに変更

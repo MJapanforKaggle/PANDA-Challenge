@@ -10,6 +10,5 @@
 
 4/30(木曜日)
 ・参考modelをhttps://www.kaggle.com/iafoss/panda-concat-tile-pooling-starter-0-79-lb/dataに変更
-・参考codeのデータ構造を生成
-【次回目標】データの前処理を理解し、Modelの解明に入れたら嬉しい。
+【次回目標】参考codeのデータ構造を生成(kernelを再度開くとなくなっている問題を解決する)、データの前処理を理解する。
 林

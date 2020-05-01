@@ -1,0 +1,5 @@
+○ save_version時の注意事項
+  Kernelをsave versionする際に、Quick_saveとcommitがある。
+  Quick_saveはコード自体は保存されるが、実行はされない。
+  Commitはコードの保存＆実行される
+  ->>実行せずコードだけ保存したい場合は必ずQuick_saveを押す。

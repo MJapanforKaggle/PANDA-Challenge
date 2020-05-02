@@ -6,6 +6,7 @@
  5/2
  ・ResNetクラスはpytorchから来ている模様(torchvisionあたり) 
    [concat先生のkernelのdata_sourceのhubconf.pyではインポートしている]
+   林
    
  
  

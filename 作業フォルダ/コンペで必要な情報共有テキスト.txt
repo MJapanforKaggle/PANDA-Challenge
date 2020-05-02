@@ -3,4 +3,9 @@
 ・GLEASON_scoreの説明PDF(2pを参照)
 　https://www.archivesofpathology.org/doi/pdf/10.5858/arpa.2018-0334-RA
  
+ 5/2
+ ・ResNetクラスはpytorchから来ている模様(torchvisionあたり) 
+   [concat先生のkernelのdata_sourceのhubconf.pyではインポートしている]
+   
+ 
  

@@ -26,6 +26,6 @@
 林
 
 5/3(日曜日)
-・Resnetの勉強
+・Resnet(https://arxiv.org/abs/1512.03385)の勉強
 【次回目標】ResNetのアーキテクチャ理解(論文 and code)
 林

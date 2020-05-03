@@ -4,7 +4,7 @@
 　https://www.archivesofpathology.org/doi/pdf/10.5858/arpa.2018-0334-RA
  
  5/2
- ・ResNetクラスはpytorchから来ている模様(torchvisionあたり) 
+ ・ResNetクラスはpytorchから来ている模様(torchvision.modelsあたり) 
    [concat先生のkernelのdata_sourceのhubconf.pyではインポートしている]
    林
    

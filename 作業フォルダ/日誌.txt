@@ -29,3 +29,7 @@
 ・Resnet(https://arxiv.org/abs/1512.03385)の勉強
 【次回目標】ResNetのアーキテクチャ理解(論文 and code)
 林
+
+5/4(月曜日)
+・参考codeのData_Sourceを途中まで作成
+【次回目標】参考codeの実行

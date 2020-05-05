@@ -8,3 +8,7 @@
 　Kaggleでは、他の人が作ったDatasetsを自分のinput_dataとして追加することができる。
  追加方法は、
  [自分のKernelを開く]->[editボタンを押す]->[右側のウィンドウの"+add Data"をクリック]->[入れたいDataを検索して追加する]
+
+○ GPU使用について
+　KaggleではCPUの他にGPUも使用可能。(TPUもある)
+ しかし、GPUには30h/1weekの制限があるため使用の際には注意が必要

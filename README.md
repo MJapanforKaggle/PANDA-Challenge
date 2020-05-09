@@ -7,3 +7,5 @@
    　　　　　　　　　(Kaggle上では読みずらかったのでこっちにコピペした)    
                  
   ・image_process: 階調数を16bitから8bitに変換するコード(動くかは不明)  
+
+　・demo.ipynb:　参考code

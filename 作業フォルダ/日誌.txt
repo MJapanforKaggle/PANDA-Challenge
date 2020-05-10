@@ -55,7 +55,7 @@
 林
 
 5/10(日曜日)
-・get_data関数のdatabunch以前を解析
+・get_data関数のdatabunch以前を解析(部分的な解説をdemo.ipynbにコメントアウトしてます)
 【次回目標】 get_data関数の解析
 林
-【次回目標】 get_data関数の解析
+

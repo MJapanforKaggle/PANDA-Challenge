@@ -53,3 +53,9 @@
 ・画像をタイル化後の前処理を解析(Dataframeの画像をPANDA-Challenge/imgに格納してます)
 【次回目標】fastai部分の解析
 林
+
+5/10(日曜日)
+・get_data関数のdatabunch以前を解析
+【次回目標】 get_data関数の解析
+林
+【次回目標】 get_data関数の解析

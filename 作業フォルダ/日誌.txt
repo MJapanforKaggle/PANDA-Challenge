@@ -68,3 +68,7 @@
 ・参考codeのResNetの解析
 ・grouped convolutionの理解
 【次回目標】改善点の探求
+
+5/16(土曜日)
+・参考codeの学習時のModel解析(途中まで)
+【次回目標】学習時、推論時のModel解析と改善点の探求

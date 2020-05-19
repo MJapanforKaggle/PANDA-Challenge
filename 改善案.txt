@@ -3,3 +3,8 @@
 ○ResNetより精度の良いモデルを使うのは？
 　・EfficientNet
   ・Noisy student
+
+○EfficientNetより
+　・highe_resolutionなinput_dataは微細な特徴も捉えられる(ex. 299x299, 331x331)
+  ・深さは大きくすればするほど精度の増加率が減少する
+  ->tileはもっと大きくとっていいのでは？

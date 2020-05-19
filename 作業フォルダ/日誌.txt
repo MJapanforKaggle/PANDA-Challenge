@@ -76,3 +76,8 @@
 5/17(日曜日)
 ・Modelの出力(Model.txt)
 【改善点の探索】
+
+5/19(火曜日)
+・EfficientNetを読んだ
+　ResNetよりは良さそう
+【次回目標】Noisy studentを読む 

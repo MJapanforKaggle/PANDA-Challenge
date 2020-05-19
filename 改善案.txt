@@ -1,1 +1,5 @@
 ○Mish関数はいいのか？
+
+○ResNetより精度の良いモデルを使うのは？
+　・EfficientNet
+  ・Noisy student

@@ -1,37 +1,37 @@
 Model(
-  (enc): Sequential(                                                                                         # [128x128x3]
-    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)                        # [64x64x64]
-    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)                     # [64x64x64]
-    (2): ReLU(inplace=True)                                                                                  # [64x64x64]
-    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)                          # [32x32x64]
+  (enc): Sequential(                                                                                         # o[128x128x3]
+    (0): Conv2d(3, 64, kernel_size=(7, 7), stride=(2, 2), padding=(3, 3), bias=False)                        # o[64x64x64]
+    (1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)                     # o[64x64x64]
+    (2): ReLU(inplace=True)                                                                                  # o[64x64x64]
+    (3): MaxPool2d(kernel_size=3, stride=2, padding=1, dilation=1, ceil_mode=False)                          # o[32x32x64]
     (4): Sequential(     
       (0): Bottleneck(
-        (conv1): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)                              # [32x32x128]
-        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              # [32x32x128]
-        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)  # [32x32x128] 
-        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              # [32x32x256]
-        (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)                             # [32x32x256]
-        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              # [32x32x256] 
-        (relu): ReLU(inplace=True)                                                                           # [32x32x256]        (downsample): Sequential(                                                                               #x[32x32x64]
+        (conv1): Conv2d(64, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)                              # o[32x32x128]
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              # o[32x32x128]
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)  # o[32x32x128] 
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              # o[32x32x256]
+        (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)                             # o[32x32x256]
+        (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              # o[32x32x256] 
+        (relu): ReLU(inplace=True)                                                                           # o[32x32x256]        (downsample): Sequential(                                                                             #x[32x32x64]
           (0): Conv2d(64, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)                                #x[32x32x256]
           (1): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              #x[32x32x256]
-         )
+         )                                                                                # o[32x32x256] = o + x
       )
       (1): Bottleneck(
-        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
-        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)                             #o[32x32x128]
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)  #o[32x32x128]
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)              ↑grouped conv
+        (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)                             #o[32x32x256]
         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
         (relu): ReLU(inplace=True)
       )
       (2): Bottleneck(
-        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)
-        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)
-        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
-        (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)
+        (conv1): Conv2d(256, 128, kernel_size=(1, 1), stride=(1, 1), bias=False)                             #o[32x32x128]
+        (bn1): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True) 
+        (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), groups=32, bias=False)  #o[32x32x128]
+        (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)               ↑grouped conv
+        (conv3): Conv2d(128, 256, kernel_size=(1, 1), stride=(1, 1), bias=False)                             #o[32x32x256]
         (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
         (relu): ReLU(inplace=True)
       )

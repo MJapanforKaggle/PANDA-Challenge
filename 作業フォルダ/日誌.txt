@@ -81,3 +81,12 @@
 ・EfficientNetを読んだ
 　ResNetよりは良さそう
 【次回目標】Noisy studentを読む 
+
+5/21(木曜日)
+・Noisy studentsを読んだ
+　いちおうImageNetではtop-1とかtop-5を見る限りrank2位(5/21)
+　手法が手法なだけに学習時間がエグくて(TPU v3で6日間)Kaggleでは使えるか微妙(多分無理)
+  モデルのアーキテクチャとしてはEfficientNETをつかってるから、
+  EfficientNETで考えるのが妥当かと思う。
+  EfficientNETででてきたNerual Architecture Search(NAS)ってのが謎だけど興味深い。
+ 【次回目標】NASを読む

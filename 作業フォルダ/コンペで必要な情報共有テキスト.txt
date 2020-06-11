@@ -3,6 +3,22 @@
 ・GLEASON_scoreの説明PDF(2pを参照)
 　https://www.archivesofpathology.org/doi/pdf/10.5858/arpa.2018-0334-RA
  
+          isup_grade
+count  10616.000000
+mean       1.902223
+std        1.719537
+min        0.000000
+25%        0.000000
+50%        1.000000
+75%        3.000000
+max        5.000000
+0    2892
+1    2666
+2    1343
+4    1249
+3    1242
+5    1224
+ 
  5/2
  ・ResNetクラスはpytorchから来ている模様(torchvision.modelsあたり) 
    [concat先生のkernelのdata_sourceのhubconf.pyではインポートしている]

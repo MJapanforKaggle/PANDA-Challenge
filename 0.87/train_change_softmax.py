@@ -213,12 +213,13 @@ def val_epoch(loader, get_output=False):
             data, target = data.to(device), target.to(device)
             logits = model(data)
 
-            loss = criterion(logits, target)
+            pred = F.log_softmax(logits, dim=-1)
+       	    loss = F.nll_loss(pred, target)
+            LOGITS.append(pred)
 
             pred = torch.argmax(logits, dim=1)
-            LOGITS.append(logits)
             PREDS.append(pred)
-            TARGETS.append(target.sum(1))
+            TARGETS.append(target)
 
             val_loss.append(loss.detach().cpu().numpy())
         val_loss = np.mean(val_loss)
